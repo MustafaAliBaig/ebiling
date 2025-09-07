@@ -1,0 +1,12 @@
+# .dockerignore (shrinks Docker build context)
+@"
+target/
+.git/
+.gitignore
+.env
+**/*.log
+README.md
+"@ | Set-Content -Encoding UTF8 .dockerignore
+
+# .env.example (commit this; keep your real .env ignored)
+@"
